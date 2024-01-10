@@ -12,7 +12,7 @@ import psycopg2
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv(dotenv_path='../.env')
 
 db_user = os.getenv('DB_USER')
 db_host = os.getenv('DB_HOST')
